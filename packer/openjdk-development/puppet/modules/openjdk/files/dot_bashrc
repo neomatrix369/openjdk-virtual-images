@@ -1,0 +1,19 @@
+#!/bin/bash
+
+set -e
+
+# These env variables below would be best set via the Chef script ?
+#export JAVA_HOME=
+#export JT_HOME=
+#export PRODUCT_HOME_JDK8=
+#export PRODUCT_HOME_JDK9=
+
+export PRODUCT_HOME=$PRODUCT_HOME_JDK8
+export SOURCE_CODE=$HOME/workspace
+export JTREG_INSTALL=$JT_HOME
+export JTREG_HOME=$JTREG_INSTALL
+export JT_HOME=$JTREG_INSTALL
+export JPRT_JTREG_HOME=$JT_HOME
+export JPRT_JAVA_HOME=$PRODUCT_HOME
+export JTREG_TIMEOUT_FACTOR=5
+export CONCURRENCY=auto
